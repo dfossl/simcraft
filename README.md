@@ -875,7 +875,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 If you use SimCraft in your research, please cite:
 
 ```bibtex
-@software{simcraft2024,
+@software{simcraft2026,
   author = {Bulent Soykan},
   title = {SimCraft: A Production-Grade Discrete Event Simulation Framework},
   year = {2026},
