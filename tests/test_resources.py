@@ -3,7 +3,7 @@ Tests for resource management components.
 """
 
 import pytest
-from simcraft.core.simulation import Simulation
+from simcraft.core.simulation import Simulation, SimulationConfig
 from simcraft.core.entity import Entity
 from simcraft.resources.queue import Queue, PriorityQueue
 from simcraft.resources.server import Server
@@ -161,7 +161,7 @@ class TestServer:
 
     def test_random_service_time(self):
         """Test random service time function."""
-        sim = Simulation(config={"seed": 42})
+        sim = Simulation(config=SimulationConfig(seed=42))
 
         def random_service():
             return sim.rng.exponential(5.0)
