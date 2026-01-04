@@ -9,14 +9,14 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="simcraft",
-    version="1.0.0",
+    version="1.0.1",
     author="Bulent Soykan",
     author_email="",
     description="A discrete event simulation framework for Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/bulentsoykan/simcraft",
-    packages=find_packages(exclude=["tests", "tests.*"]),
+    packages=find_packages(include=["simcraft", "simcraft.*"], exclude=["tests", "tests.*"]),
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",

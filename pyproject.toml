@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "simcraft"
-version = "1.0.0"
+version = "1.0.1"
 description = "A discrete event simulation framework for Python"
 readme = "README.md"
 license = {text = "MIT"}
@@ -72,6 +72,7 @@ Documentation = "https://simcraft.readthedocs.io/"
 Repository = "https://github.com/bulentsoykan/simcraft"
 
 [tool.setuptools.packages.find]
+include = ["simcraft*"]
 exclude = ["tests*"]
 
 [tool.pytest.ini_options]
