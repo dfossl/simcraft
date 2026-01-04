@@ -72,6 +72,8 @@ Documentation = "https://simcraft.readthedocs.io/"
 Repository = "https://github.com/bulentsoykan/simcraft"
 
 [tool.setuptools.packages.find]
+where = ["src"]
+include = ["simcraft*"]
 exclude = ["tests*"]
 
 [tool.pytest.ini_options]
