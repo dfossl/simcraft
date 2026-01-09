@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "simcraft"
@@ -71,9 +71,6 @@ Homepage = "https://github.com/bulentsoykan/simcraft"
 Documentation = "https://simcraft.readthedocs.io/"
 Repository = "https://github.com/bulentsoykan/simcraft"
 
-[tool.setuptools.packages.find]
-include = ["simcraft*"]
-exclude = ["tests*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
